@@ -1,0 +1,16 @@
+ALGORITHM insertion_sort
+VAR
+    i,j,tmp,n: INTEGER;
+    arr : ARRAY_OF INTEGER[n];
+
+BEGIN
+    FOR i FROM 1 TO n-1 STEP 1 DO
+        tmp:=arr[i];
+        j:=i-1;
+        WHILE (j>=o AND arr[j]>tmp) DO
+            arr[j+1]:=arr[j];
+            j:=j-1;
+        END_WHILE
+        arr[j+1]:=tmp;
+    END_FOR
+END
